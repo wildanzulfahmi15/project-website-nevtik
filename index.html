@@ -143,6 +143,32 @@
 .scrollbar-hidden {
     -ms-overflow-style: none;
 }
+
+    .achievement-slider {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    .achievement-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .achievement-card {
+        scroll-snap-align: start;
+    }
+
+    .slider-button {
+        background-color: rgba(181, 116, 66, 0.8);
+        color: white;
+        padding: 1rem;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .slider-button:hover {
+        background-color: rgba(181, 116, 66, 1);
+    }
     </style>
 
 
@@ -295,45 +321,46 @@
 
         </div>
     </div>
-    <div>
-        <h1 id="achievement" class="flex flex-col justify-center text-center mb-8 mt-2 font-extrabold text-[50px] max-md:flex-col ">
-            ACHIEVEMENT
-            <div class="w-[380px] h-0.5 bg-[#B57442] mx-auto mt-2"></div>
-        </h1>
+    <div class="relative px-4 mb-16">
+    <h1 id="achievement" class="text-center font-extrabold text-[50px] max-md:text-3xl mb-8">
+        ACHIEVEMENT
+        <div class="w-[280px] md:w-[380px] h-0.5 bg-[#B57442] mx-auto mt-2"></div>
+    </h1>
 
-
-        <style>
-            /* Sembunyikan scrollbar */
-            .carousel-container::-webkit-scrollbar {
-                display: none;
-            }
-        </style>
+    <div class="relative max-w-[1200px] mx-auto">
+        <button class="slider-button absolute left-0 top-1/2 -translate-y-1/2 z-10" id="slideLeft">
+            &#10094;
+        </button>
         
-        <div class="carousel-container w-full overflow-x-scroll scroll-smooth snap-x snap-mandatory">
-            <div class="flex gap-4 flex-nowrap">
-                <div class="relative w-[400px] h-[250px] shrink-0 snap-start">
-                    <img src="assets/foto.JPG" alt="" class="w-full h-full rounded-lg">
+        <div class="achievement-slider overflow-x-scroll scroll-smooth">
+            <div class="flex gap-4 p-4">
+                <div class="achievement-card min-w-[300px] md:min-w-[400px] relative rounded-lg overflow-hidden flex-shrink-0">
+                    <img src="assets/foto.JPG" alt="" class="w-full h-[250px] object-cover rounded-lg">
                     <p class="font-bold absolute bottom-2 left-2 bg-black bg-opacity-50 text-white p-2 rounded">
                         JUARA 1: IT NETWORK <br> LKS PROVINSI JABAR 2018
                     </p>
                 </div>
-                <div class="relative w-[400px] h-[250px] shrink-0 snap-start">
-                    <img src="assets/foto.JPG" alt="" class="w-full h-full rounded-lg">
+                <div class="achievement-card min-w-[300px] md:min-w-[400px] relative rounded-lg overflow-hidden flex-shrink-0">
+                    <img src="assets/foto.JPG" alt="" class="w-full h-[250px] object-cover rounded-lg">
                     <p class="font-bold absolute bottom-2 left-2 bg-black bg-opacity-50 text-white p-2 rounded">
                         JUARA 2: SOFTWARE DEVELOPMENT
                     </p>
                 </div>
-                <div class="relative w-[400px] h-[250px] shrink-0 snap-start">
-                    <img src="assets/foto.JPG" alt="" class="w-full h-full rounded-lg">
+                <div class="achievement-card min-w-[300px] md:min-w-[400px] relative rounded-lg overflow-hidden flex-shrink-0">
+                    <img src="assets/foto.JPG" alt="" class="w-full h-[250px] object-cover rounded-lg">
                     <p class="font-bold absolute bottom-2 left-2 bg-black bg-opacity-50 text-white p-2 rounded">
                         JUARA 3: CYBER SECURITY
                     </p>
                 </div>
             </div>
         </div>
-        
 
+        <button class="slider-button absolute right-0 top-1/2 -translate-y-1/2 z-10" id="slideRight">
+            &#10095;
+        </button>
     </div>
+</div>
+
 
     <div id="activity" class="container mx-auto px-4 py-16">
     <h1 class="text-center font-extrabold text-[50px] max-md:text-3xl mb-8">
@@ -522,6 +549,25 @@ document.querySelectorAll('a[href^="#"]').forEach(ancho => {
 		}
 		indicators();}
 
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.achievement-slider');
+    const slideLeft = document.getElementById('slideLeft');
+    const slideRight = document.getElementById('slideRight');
+    
+    slideLeft.addEventListener('click', () => {
+        slider.scrollBy({
+            left: -400,
+            behavior: 'smooth'
+        });
+    });
+    
+    slideRight.addEventListener('click', () => {
+        slider.scrollBy({
+            left: 400,
+            behavior: 'smooth'
+        });
+    });
+});
         </script>
 
 </body>
