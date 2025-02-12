@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 
 <style>
@@ -62,7 +63,7 @@
 
 <div class="max-md:flex max-md:flex-col">
 <header class="flex items-center justify-center mt-8 max-md:text-center">
-    <h1 class="font-bold text-[36px]">Di <span class="text-red-500">ITNSA</span> kita Belajar Apa aja sih ?</h1>
+    <h1 id="typing" class="font-bold text-[36px]">Di <span class="text-red-500">ITNSA</span> kita Belajar Apa aja sih ?</h1>
 </header>
 
 
@@ -133,7 +134,14 @@
 </div>
 </div>
 
-<script>            document.addEventListener("DOMContentLoaded", function () {
+<script>         
+
+document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#typing", {loop:true
+            }).go();
+        });
+
+    document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
 

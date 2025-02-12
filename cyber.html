@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 
 <style>
@@ -87,7 +88,7 @@
 
 <div class="max-md:flex max-md:flex-col">
 <header class="flex items-center justify-center mt-8 max-md:text-center">
-    <h1 class="font-bold text-[36px] mb-8">Di <span class="text-red-500">CYBER SECURITY</span> kita Belajar Apa aja sih ?</h1>
+    <h1 id="typing" class="font-bold text-[36px] mb-8">Di <span class="text-red-500">CYBER SECURITY</span> kita Belajar Apa aja sih ?</h1>
 </header>
 
 
@@ -95,7 +96,7 @@
    <div class="flex flex-col gap-4 ">
 
        <h3 class="">Apakah kalian Sudah Tau Apa Itu Keamanan Jaringan ?</h3>
-       <p class="text-sm">Keamanan jaringan adalah praktik dan teknologi yang digunakan untuk melindungi jaringan komputer dari <br>
+       <p class="text-sm mb-8">Keamanan jaringan adalah praktik dan teknologi yang digunakan untuk melindungi jaringan komputer dari <br>
            ancaman, serangan, atau akses yang tidak sah. Tujuannya adalah untuk menjaga kerahasiaan, integritas, dan <br>
            ketersediaan data serta sumber daya dalam jaringan.</p>
    </div>
@@ -178,7 +179,14 @@
 </div>
 </div>
 
-<script>            document.addEventListener("DOMContentLoaded", function () {
+<script>   
+
+document.addEventListener("DOMContentLoaded", function () {
+            new TypeIt("#typing", {loop:true
+            }).go();
+        });
+    
+    document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
 
