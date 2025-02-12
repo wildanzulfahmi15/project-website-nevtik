@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    *,body,html{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #292929;
+        color: white;
+    }
+</style>
+
+<body >
+
+    <header>
+        <nav 
+            class="flex bg-[#292929] shadow-[0_10px_10px_rgba(0,0,0,0.3)] mt-4  items-center justify-between font-extrabold p-4 m-10 ">
+            <div class="flex gap-2  flex">
+                <img class="w-10 h-10 rounded-full" src="assets/logoo.png" alt="">
+                <P class="mt-2"><a href="index.html">NEVTIK <span class="text-red-500">ACADEMY</a></span></P>
+            </div>
+            <div id="nav" class="flex gap-5  flex bg-[#292929]  items-center max-md:hidden ">
+                <p  class=" duration-500 ease-in-out hover:text-red-500  "><a href="index.html#home" >HOME</a></p>
+                <p  class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#divisi">DIVISION</a></p>
+                <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="#achievement">ACHIEVEMENT</a></p>
+                <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="#activity">ACTIVITY</a></p>
+            </div>
+
+
+            <div class="flex gap-8">
+                <a href="https://wa.me/+6281575588582"><p
+                    class="flex items-center h-2 text-black bg-white p-4 rounded-full transition duration-500 ease-in-out hover:bg-red-500 hover:text-white">
+                    CONTACT</p></a>
+                <div class="md:hidden cursor-pointer" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+                        <path d="M3 6h18M3 12h18m-18 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div id="mobile-menu"
+        class="md:hidden hidden font-extrabold flex-col bg-[#292929] text-white text-center py-4 space-y-4 transition-all duration-300 opacity-0 -translate-y-5">
+        <p  class=" duration-500 ease-in-out hover:text-red-500 "><a href="index.html#home" >HOME</a></p>
+        <p  class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#divisi">DIVISION</a></p>
+        <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#achievement">ACHIEVEMENT</a></p>
+        <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#activity">ACTIVITY</a></p>
+        </div>
+    
+    </header>
+
+<div class="max-md:flex max-md:flex-col">
+<header class="flex items-center justify-center mt-8 max-md:text-center">
+    <h1 class="font-bold text-[36px]">Di <span class="text-red-500">ITNSA</span> kita Belajar Apa aja sih ?</h1>
+</header>
+
+
+<div  class="flex items-start justify-center gap-8 font-bold text-[25px]  mr-8 ml-8 max-md:flex max-md:flex-col">
+    <h3 class="">Ayo Simak Pembahasannya,Disini Ada Beberapa <br>Materi Di <span class="text-red-500">ITNSA.</span></h3>
+</div>
+
+<div class="flex flex-col items-center justify-center gap-4 max-md:gap-8">
+    <div class="flex gap-16 font-bold text-[25px] mt-32  items-start max-md:flex max-md:flex-col max-md:4 max-md:mr-0 max-md:gap-8 max-md:mt-0">
+        <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px] ">
+        <div class="flex flex-col gap-8">
+
+            <h3 class="mt-0">A.konfigurasi server (seperti <span class="text-red-500">dns,dhcp,http</span>)  </h3>
+            <h3 class="mt-0">Mari Kita Lihat Penjelasannya!! </h3>
+        </div>
+    </div>
+    <div class="flex justify-left mr-[500px]  max-md:mr-0 ">
+        <p class="text-left font-bold">
+            Konfigurasi server adalah proses pengaturan dan penyesuaian <br>sistem server agar dapat menjalankan layanan tertentu sesuai <br>kebutuhan jaringan. Beberapa layanan utama yang sering <br>dikonfigurasi pada server meliputi DNS, DHCP, dan HTTP.
+        </p>
+    </div>
+</div>
+
+
+<div class="flex flex-col items-center justify-center gap-4 ">
+    <div class="flex gap-16 font-bold text-[25px] mt-32 items-start max-md:flex max-md:flex-col max-md:mr-0 max-md:gap-4 max-md:mt-0">
+        <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px]">
+        <div class="flex flex-col gap-0 mr-32">
+
+            <h3 class="mt-0">B. Penguasaan tools jaringan <br>dan alat (<span class="text-red-500">Cisco,Mikrotik.</span>)  </h3>
+            <h3 class="mt-0">Mari Kita Lihat Penjelasannya!! </h3>
+        </div>
+    </div>
+    <div class="flex justify-center mr-[210px]  max-md:mr-0 max-md:ml-[98px] ">
+        <p class="text-left font-bold mr-32">MikroTik adalah perusahaan asal Latvia yang memproduksi perangkat jaringan,
+             <br>terutama router dan wireless. Produk utamanya adalah RouterOS, sebuah sistem <br>
+             operasi berbasis Linux yang digunakan pada router MikroTik. <br>
+             Cisco adalah perusahaan teknologi asal Amerika Serikat yang terkenal dalam <br>
+             bidang jaringan komputer dan telekomunikasi. Cisco memproduksi berbagai <br>
+             perangkat jaringan seperti router, switch, firewall, dan access point yang <br>
+             digunakan dalam skala kecil hingga enterprise (perusahaan besar).
+
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-col items-center justify-center gap-4 ">
+    <div class="flex gap-16 font-bold text-[25px] mt-32 mr-32   items-start max-md:flex max-md:flex-col max-md:mr-0 max-md:gap-4 max-md:mt-0">
+        <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px]">
+        <div class="flex flex-col gap-4">
+
+            <h3 class="mt-0">C. <span class="text-red-500">deploy web dalam local</span> </h3>
+            <p class="mt-0 text-[15px] text-left font-bold">Deploy web dalam lokal berarti menjalankan atau <br>
+                menyebarkan aplikasi web di lingkungan lokal <br>
+                (komputer sendiri) tanpa perlu mengunggahnya ke <br>
+                server online. Ini sering dilakukan untuk <br>
+                pengembangan, pengujian, atau demonstrasi sebelum <br>
+                web dipublikasikan ke internet. 
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="h-32 mt-32  flex justify-center items-center  max-md:flex max-md:items-center ">
+    <a href="index.html"> <button class="rounded-lg border w-[200px] h-[60px] bg-white text-black">BACK TO HOME</button></a>
+</div>
+</div>
+
+<script>            document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", function () {
+        if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.add("opacity-100", "translate-y-0");
+                mobileMenu.classList.remove("opacity-0", "-translate-y-5");
+            }, 10);
+        } else {
+            mobileMenu.classList.add("opacity-0", "-translate-y-5");
+            mobileMenu.classList.remove("opacity-100", "translate-y-0");
+
+            setTimeout(() => {
+                mobileMenu.classList.add("hidden");
+            }, 300); 
+        }
+    });
+});
+</script>
+</body>
+</html>

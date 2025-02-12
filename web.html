@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    *,body,html{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #292929;
+        color: white;
+    }
+
+    
+</style>
+
+<body >   
+    
+    <header>
+        <nav 
+            class="flex bg-[#292929] shadow-[0_10px_10px_rgba(0,0,0,0.3)] mt-4  items-center justify-between font-extrabold p-4 m-10 ">
+            <div class="flex gap-2  flex">
+                <img class="w-10 h-10 rounded-full" src="assets/logoo.png" alt="">
+                <P class="mt-2"><a href="index.html">NEVTIK <span class="text-red-500">ACADEMY</a></span></P>
+            </div>
+            <div id="nav" class="flex gap-5  flex bg-[#292929]  items-center max-md:hidden ">
+                <p  class=" duration-500 ease-in-out hover:text-red-500  "><a href="index.html#home" >HOME</a></p>
+                <p  class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#divisi">DIVISION</a></p>
+                <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="#achievement">ACHIEVEMENT</a></p>
+                <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="#activity">ACTIVITY</a></p>
+            </div>
+
+
+            <div class="flex gap-8">
+                <a href="https://wa.me/+6281575588582"><p
+                    class="flex items-center h-2 text-black bg-white p-4 rounded-full transition duration-500 ease-in-out hover:bg-red-500 hover:text-white">
+                    CONTACT</p></a>
+                <div class="md:hidden cursor-pointer" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+                        <path d="M3 6h18M3 12h18m-18 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div id="mobile-menu"
+        class="md:hidden hidden font-extrabold flex-col bg-[#292929] text-white text-center py-4 space-y-4 transition-all duration-300 opacity-0 -translate-y-5">
+        <p  class=" duration-500 ease-in-out hover:text-red-500 "><a href="index.html#home" >HOME</a></p>
+        <p  class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#divisi">DIVISION</a></p>
+        <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#achievement">ACHIEVEMENT</a></p>
+        <p class="transition duration-500 ease-in-out hover:text-red-500 "><a href="index.html#activity">ACTIVITY</a></p>
+        </div>
+    
+    </header>
+
+
+<div class="max-md:flex max-md:flex-col">
+<header class="flex items-center justify-center mt-8 max-md:text-center">
+    <h1 class="font-bold text-[36px]">DI WEB <span class="text-red-500 ">DEVELOPMENT</span> BELAJAR APA AJA SIH?</h1>
+</header>
+
+<div  class="flex items-start justify-center gap-8 font-bold text-[25px] mt-32 mr-8 ml-8 max-md:flex max-md:flex-col">
+    <img src="assets/foto.JPG" alt="" class="w-[573px] h-[351px]">
+    <h3 class="mb-64">Disini Kita akan Belajar Di Bidang UI/UX <br>
+        Front End, Dan Back End.</h3>
+</div>
+
+<div class="flex flex-col items-center justify-center gap-4">
+    <div class="flex gap-32 font-bold text-[25px] mt-32 mr-[360px] items-start max-md:flex max-md:flex-col max-md:mr-0 max-md:gap-4 max-md:mt-0">
+        <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px]">
+        <h3 class="mt-0">Apa Itu <span class="text-red-500">UI/UX</span> ?</h3>
+    </div>
+    <div class="flex justify-left mr-[518px]  max-md:mr-0 ">
+        <p class="text-left">
+            UI sendiri merupakan singkatan dari user interface, sedangkan UX merupakan <br>
+            singkatan dari user experience. UI dan UX memiliki kesamaan fungsi dalam <br>
+            mengembangan suatu desain produk tertentu. <br>
+            UI/UX merupakan sebuah profesi yang saat ini sudah banyak dikenali dan <br>
+            dibutuhkan oleh berbagai perusahaan karena perkembangan teknologi saat <br>
+            ini yang semakin meningkat. 
+        </p>
+    </div>
+</div>
+
+
+<div  class="flex flex-col items-center justify-center  ">
+    <div class="flex gap-16 font-bold text-[25px] mt-32 max-md:flex max-md:flex-col ">
+
+        <div class="flex flex-col gap-8">
+            <h3 class="mt-8">Apa Itu <span class="text-red-500 ">FRONT END</span> ?</h3>
+            <p class="text-left font-bold text-[16px]">merupakan salah satu bagian dari website yang <br>menampilkan tampilan untuk para pengguna. Pada <br>bagian ini dibuat dengan menggunakan 3 bahasa <br>pemrograman web yaitu HyperText Markup Language <br>(HTTP), Cascading Style Sheets (CSS), dan JavaScript. </p>
+        </div>
+        <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px] ">
+    </div>
+
+    <div  class="flex flex-col items-center justify-center gap-8 ">
+        <div class="flex gap-32 font-bold text-[25px] mt-32 max-md:flex max-md:flex-col max-md:gap-2" >
+    
+            <img src="assets/foto.JPG" alt="" class="w-[389px] h-[283px]">
+            <div>
+                <h3 class="mt-16">Apa Itu <span class="text-red-500 ">BACK END?</span> ?</h3>
+                <p class="text-left font-bold text-[16px]">seseorang yang memiliki keahlian khusus dalam <br>merancang pengembangan software dari sisi server <br>dan berkaitan dengan database dan logika. Server <br>adalah nyawa situs website atau aplikasi yang <br>membuat software bekerja baik dan lancar. </p>
+            </div>
+        </div>
+
+        
+        
+    </div>
+     
+    
+    
+    
+</div>
+<div class="h-32 mt-32  flex justify-center items-center  max-md:flex max-md:items-center ">
+    <a href="index.html"> <button class="rounded-lg border w-[200px] h-[60px] bg-white text-black">BACK TO HOME</button></a>
+</div>
+</div>
+
+<script>            document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", function () {
+        if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.add("opacity-100", "translate-y-0");
+                mobileMenu.classList.remove("opacity-0", "-translate-y-5");
+            }, 10);
+        } else {
+            mobileMenu.classList.add("opacity-0", "-translate-y-5");
+            mobileMenu.classList.remove("opacity-100", "translate-y-0");
+
+            setTimeout(() => {
+                mobileMenu.classList.add("hidden");
+            }, 300); 
+        }
+    });
+});
+</script>
+</body>
+</html>
